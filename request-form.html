@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tech Support Request Form</title>
+    <style>
+        /* Basic Styling */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        /* Form Container */
+        .form-container {
+            background-color: white;
+            padding: 20px;
+            width: 100%;
+            max-width: 600px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border: 2px solid #004aad; /* Blue */
+        }
+
+        .form-container h2 {
+            color: #004aad;
+            text-align: center;
+        }
+
+        /* Form Elements */
+        label {
+            font-weight: bold;
+            margin-top: 10px;
+            display: block;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="file"],
+        textarea,
+        select {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            margin-bottom: 15px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        textarea {
+            resize: vertical;
+            height: 100px;
+        }
+
+        /* Submit Button */
+        button {
+            width: 100%;
+            padding: 10px;
+            font-size: 16px;
+            background-color: #00a885; /* Green */
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #007d63; /* Darker Green */
+        }
+    </style>
+</head>
+<body>
+
+<div class="form-container">
+    <h2>Technical Support Request</h2>
+    <form action="#" method="POST" enctype="multipart/form-data">
+        
+        <!-- Contact Information -->
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="phone">Phone Number (Optional):</label>
+        <input type="text" id="phone" name="phone">
+
+        <!-- Device Information -->
+        <label for="device">Device Type:</label>
+        <select id="device" name="device" required>
+            <option value="">Select device type</option>
+            <option value="desktop">Desktop</option>
+            <option value="laptop">Laptop</option>
+            <option value="tablet">Tablet</option>
+            <option value="smartphone">Smartphone</option>
+            <option value="other">Other</option>
+        </select>
+
+        <label for="os">Operating System:</label>
+        <select id="os" name="os" required>
+            <option value="">Select operating system</option>
+            <option value="windows">Windows</option>
+            <option value="mac">MacOS</option>
+            <option value="linux">Linux</option>
+            <option value="ios">iOS</option>
+            <option value="android">Android</option>
+            <option value="other">Other</option>
+        </select>
+
+        <!-- Issue Details -->
+        <label for="issue">Describe Your Issue:</label>
+        <textarea id="issue" name="issue" placeholder="Please provide as many details as possible..." required></textarea>
+
+        <label for="urgency">Urgency Level:</label>
+        <select id="urgency" name="urgency" required>
+            <option value="low">Low - Minor issue</option>
+            <option value="medium">Medium - Needs attention soon</option>
+            <option value="high">High - Critical issue</option>
+        </select>
+
+        <!-- Additional Information -->
+        <label for="error-code">Error Code (if any):</label>
+        <input type="text" id="error-code" name="error_code" placeholder="e.g., ERR-404">
+
+        <label for="screenshot">Attach Screenshot (Optional):</label>
+        <input type="file" id="screenshot" name="screenshot" accept="image/*">
+
+        <!-- Submit Button -->
+        <button type="submit">Submit Request</button>
+    </form>
+</div>
+
+</body>
+</html>

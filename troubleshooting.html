@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Troubleshooting Questionnaire</title>
+    <style>
+        /* Basic Styling */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        /* Form Container */
+        .form-container {
+            background-color: white;
+            padding: 20px;
+            width: 100%;
+            max-width: 600px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border: 2px solid #004aad; /* Blue */
+        }
+
+        .form-container h2 {
+            color: #004aad;
+            text-align: center;
+        }
+
+        /* Form Elements */
+        label {
+            font-weight: bold;
+            display: block;
+            margin-top: 15px;
+        }
+
+        input[type="radio"] {
+            margin-right: 5px;
+        }
+
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            margin-bottom: 15px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 16px;
+            resize: vertical;
+        }
+
+        /* Submit Button */
+        button {
+            width: 100%;
+            padding: 10px;
+            font-size: 16px;
+            background-color: #00a885; /* Green */
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #007d63; /* Darker Green */
+        }
+    </style>
+</head>
+<body>
+
+<div class="form-container">
+    <h2>Troubleshooting Questionnaire</h2>
+    <form action="#" method="POST">
+        
+        <!-- Question 1 -->
+        <label>1. Is your device connected to the internet?</label>
+        <input type="radio" id="internet-yes" name="internet" value="yes" required>
+        <label for="internet-yes">Yes</label>
+        <input type="radio" id="internet-no" name="internet" value="no">
+        <label for="internet-no">No</label>
+
+        <!-- Question 2 -->
+        <label>2. Have you tried restarting your device?</label>
+        <input type="radio" id="restart-yes" name="restart" value="yes" required>
+        <label for="restart-yes">Yes</label>
+        <input type="radio" id="restart-no" name="restart" value="no">
+        <label for="restart-no">No</label>
+
+        <!-- Question 3 -->
+        <label>3. Is the software or application up to date?</label>
+        <input type="radio" id="update-yes" name="update" value="yes" required>
+        <label for="update-yes">Yes</label>
+        <input type="radio" id="update-no" name="update" value="no">
+        <label for="update-no">No</label>
+        
+        <!-- Question 4 -->
+        <label>4. Are there any error messages displayed? (If yes, please describe)</label>
+        <textarea id="error-message" name="error_message" placeholder="Describe any error messages here..."></textarea>
+
+        <!-- Question 5 -->
+        <label>5. Have you recently installed or changed any software/hardware?</label>
+        <input type="radio" id="changes-yes" name="changes" value="yes" required>
+        <label for="changes-yes">Yes</label>
+        <input type="radio" id="changes-no" name="changes" value="no">
+        <label for="changes-no">No</label>
+
+        <!-- Additional Details -->
+        <label>Additional Details (Optional):</label>
+        <textarea id="additional-details" name="additional_details" placeholder="Provide any other details that might help with troubleshooting..."></textarea>
+        
+        <!-- Submit Button -->
+        <button type="submit">Submit Troubleshooting Information</button>
+    </form>
+</div>
+
+</body>
+</html>

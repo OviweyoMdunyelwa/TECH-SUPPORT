@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <style>
+        /* Basic Styling */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        /* Container Styling */
+        .container {
+            background-color: white;
+            padding: 20px;
+            width: 100%;
+            max-width: 800px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border: 2px solid #004aad; /* Blue */
+        }
+
+        .container h2 {
+            color: #004aad;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        /* Form Styling */
+        form {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 20px;
+        }
+
+        label {
+            font-weight: bold;
+            margin-top: 10px;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            margin-bottom: 15px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        textarea {
+            resize: vertical;
+            height: 100px;
+        }
+
+        /* Button Styling */
+        button {
+            padding: 10px;
+            font-size: 16px;
+            background-color: #00a885; /* Green */
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #007d63; /* Darker Green */
+        }
+
+        /* Social Links */
+        .social-links {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        .social-links a {
+            color: #004aad;
+            font-size: 24px;
+            margin: 0 15px;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .social-links a:hover {
+            color: #007d63; /* Darker Green */
+        }
+
+        /* Other Contact Options */
+        .other-contacts {
+            margin-top: 30px;
+        }
+
+        .other-contacts p {
+            line-height: 1.6;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h2>Contact Us</h2>
+    
+    <!-- Contact Form -->
+    <form action="#" method="POST">
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="message">Your Message:</label>
+        <textarea id="message" name="message" placeholder="Enter your message here..." required></textarea>
+
+        <button type="submit">Send Message</button>
+    </form>
+    
+    <!-- Social Media Links -->
+    <div class="social-links">
+        <a href="https://facebook.com/company" target="_blank" aria-label="Facebook"><img src="facebook-icon.png" alt="Facebook"></a>
+        <a href="https://twitter.com/company" target="_blank" aria-label="Twitter"><img src="twitter-icon.png" alt="Twitter"></a>
+        <a href="https://linkedin.com/company" target="_blank" aria-label="LinkedIn"><img src="linkedin-icon.png" alt="LinkedIn"></a>
+        <a href="https://instagram.com/company" target="_blank" aria-label="Instagram"><img src="instagram-icon.png" alt="Instagram"></a>
+    </div>
+    
+    <!-- Other Contact Information -->
+    <div class="other-contacts">
+        <h3>Other Ways to Reach Us:</h3>
+        <p><strong>Email:</strong> support@company.com</p>
+        <p><strong>Phone:</strong> 1-800-555-0101</p>
+        <p><strong>Office Address:</strong><br>
+           123 Tech Avenue<br>
+           Suite 100<br>
+           City, State, ZIP</p>
+        <p>Our team is available from <strong>Monday to Friday, 9:00 AM to 6:00 PM</strong> for calls and in-person visits.</p>
+    </div>
+</div>
+
+</body>
+</html>
+
